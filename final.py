@@ -283,6 +283,7 @@ elif app_mode == "Twitter Analysis":
                 twitter_profile_url = f"https://twitter.com/{query}?ref_src=twsrc%5Etfw"
         
         # Embed Twitter timeline using <a> tag and <script>
+                #coded by Bikram Sadhukhan**
                 st.markdown(f"""
         <a class="twitter-timeline" href="{twitter_profile_url}">Tweets by {query}</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -295,7 +296,7 @@ elif app_mode == "Twitter Analysis":
             st.subheader("Sample Tweets:")
             for tweet in tweets[:5]:
                 st.write(f"- {tweet}")
-            st.subheader("Made by Team Garuda Rakshak")
+            st.write("Made by Team Garuda Rakshak")
                 
                 
 
